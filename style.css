@@ -1,0 +1,97 @@
+*{
+    box-sizing: border-box;
+    font-size: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    background-color: #73b1c1;
+    height: 100vh;
+}
+
+#name{
+    font-size: 8rem;
+    color: #f1d18a;
+    opacity: 0.8;
+}
+
+#input{
+    border: none;
+    width: 30rem;
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+form{
+    padding: 0;
+    margin: 0;
+}
+
+input:focus{
+    outline-color: #f1d18a;
+}
+
+small{
+    color: #36626a;
+    padding: 10px;
+    opacity: 0.8;
+    font-weight: 600;
+}
+
+#to_do_list{
+    margin: 0;
+    padding: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    max-height: 30rem;
+}
+
+#to_do_list li{
+    background-color: #f1d18a;
+    text-align: center;
+    padding: 1rem 1rem;
+    font-size: 2rem;
+    font-weight: 400;
+    list-style-type: none;
+    cursor: pointer;
+    box-shadow: 4px 3px black;
+    width: 30rem;
+    max-width: 30rem;
+    word-wrap: break-word;
+    margin: 0 1rem 0.6rem;
+}
+
+#to_do_list li:hover{
+    transform: scale(1.02);
+    transition: 0.5s;
+}
+
+#to_do_list li.completed{
+    color: green;
+    opacity: 0.5;
+    text-decoration: line-through;
+}
+
+#to_do_list li.completed:hover{
+    transform: scale(1);
+    transition: none;
+}
+
+.addBtn{
+    width: 30rem;
+    text-align: center;
+    float: left;
+    font-size: 2rem;
+    font-weight: 600;
+    background-color: #f1d18a;
+    color: white;
+    cursor: pointer;
+    border-style: none;
+    margin-top: 0.2rem;
+}
